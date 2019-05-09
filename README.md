@@ -1,4 +1,10 @@
 # DarkSky Java Client
+
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://github.com/skylarkbe/darksky-client/blob/master/LICENSE)
+![GitHub tag (latest by date)](https://img.shields.io/github/tag-date/skylarkbe/darksky-client.svg)
+[![Build Status](https://travis-ci.com/skylarkbe/darksky-client.svg?branch=master)](https://travis-ci.com/skylarkbe/darksky-client)
+
+
 This project implements a REST client interface for the [Dark Sky API](https://darksky.net/). While keeping in mind that this client could be used in a [Spring](https://spring.io/) context as a bean, it may also be used independently.
 
 To use this library, you must create an account on the [Dark Sky API Developer portal](https://darksky.net/dev), and generate a key for the API.
