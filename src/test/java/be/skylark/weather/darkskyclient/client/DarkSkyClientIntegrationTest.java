@@ -7,10 +7,7 @@ import be.skylark.weather.darkskyclient.entities.DsUnit;
 import be.skylark.weather.darkskyclient.errors.DsForecastException;
 import be.skylark.weather.darkskyclient.models.GeoPoint;
 import be.skylark.weather.darkskyclient.utils.GeoPointUtils;
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Assumptions;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;

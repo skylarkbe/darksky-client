@@ -17,6 +17,7 @@
 		<maven.compiler.target>1.8</maven.compiler.target>
 		<jersey.client.version>2.26-b03</jersey.client.version>
 		<junit.jupiter.version>5.4.2</junit.jupiter.version>
+		<junit.test.excludes>**/*IntegrationTest.java</junit.test.excludes>
 	</properties>
 
 	<dependencies>
@@ -53,5 +54,20 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.9</version>
+				<configuration>
+					<excludes>
+						<exclude>${junit.test.excludes}</exclude>
+					</excludes>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
 
 </project>
