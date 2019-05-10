@@ -6,7 +6,7 @@
 
 	<groupId>be.skylark.weather</groupId>
 	<artifactId>darksky-client</artifactId>
-	<version>1.0.1-SNAPSHOT</version>
+	<version>1.0.1</version>
 	<name>darksky-client</name>
 	<description>Rest Client library for the darksky API</description>
 
