@@ -7,7 +7,7 @@ import java.util.Optional;
 
 /**
  * This enum represents a Dark Sky Language that can be used in the API call.
- * See <a href="https"), // //darksky.net/dev/docs">DarkSky API</a> for more information
+ * See <a href="https://darksky.net/dev/docs">DarkSky API</a> for more information
  * @author Skylark.be
  */
 public enum DsLanguage {

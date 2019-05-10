@@ -29,10 +29,10 @@ public class NumberUtils {
 
     /**
      * This method computes the decimal value a degree-minutes-seconds input
-     * @param degrees
-     * @param minutes
-     * @param seconds
-     * @return
+     * @param degrees The degrees value of the DMS coordinate
+     * @param minutes The minutes value of the DMS coordinate
+     * @param seconds The seconds value of the DMS coordinate
+     * @return The converted DMS coordinate
      */
     public static double computeDecimalFromDMS(final int degrees, final int minutes, final double seconds) {
         double value = degrees + ( ( ( minutes * 60 ) + seconds ) / 3600 ) ;

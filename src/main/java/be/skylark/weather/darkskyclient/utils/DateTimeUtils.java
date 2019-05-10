@@ -15,7 +15,7 @@ public class DateTimeUtils {
      * @param unixTime The Unix time to transform
      * @param timezone The timezone of the Unix time ; or the System default if null is provided
      * @return The Java LocalDateTime representation of the given Unix time and time zone
-     * @throws DateTimeException
+     * @throws DateTimeException if an error during the date generation occurs
      */
     public static LocalDateTime getDateTime( Long unixTime , String timezone ) throws DateTimeException {
         if ( unixTime == null )
