@@ -50,6 +50,7 @@ public class DarkSkyClient {
      * Contacts the DarkSky API and ask for a Forecast
      * @param forecastRequest The forecast request
      * @return The DarkSky Forecast
+     * @throws DsForecastException Exception raised if any error occurs
      */
     public DsResponse getForecast(final DsForecastRequest forecastRequest) throws DsForecastException {
 
@@ -92,6 +93,7 @@ public class DarkSkyClient {
      * Contacts the DarkSky API and ask for a Time Machine report
      * @param timeMachineRequest The time machine request
      * @return The DarkSky Forecast
+     * @throws DsForecastException Exception raised if any error occurs
      */
     public DsResponse getTimeMachine(final DsTimeMachineRequest timeMachineRequest) throws DsForecastException {
 
