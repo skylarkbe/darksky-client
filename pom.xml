@@ -6,7 +6,7 @@
 
 	<groupId>be.skylark.weather</groupId>
 	<artifactId>darksky-client</artifactId>
-	<version>1.0.1</version>
+	<version>1.0.1-SNAPSHOT</version>
 	<name>darksky-client</name>
 	<description>Rest Client library for the darksky API</description>
 
@@ -37,6 +37,18 @@
 		<system>GitHub</system>
 		<url>https://github.com/skylarkbe/darksky-client/issues</url>
 	</issueManagement>
+
+
+	<distributionManagement>
+		<snapshotRepository>
+			<id>ossrh</id>
+			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
+		</snapshotRepository>
+		<repository>
+			<id>ossrh</id>
+			<url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>
+		</repository>
+	</distributionManagement>
 
 	<properties>
 		<java.version>1.8</java.version>
