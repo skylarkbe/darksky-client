@@ -7,10 +7,17 @@ before_install:
   - echo $GPG_SECRET_KEYS | base64 --decode | $GPG_EXECUTABLE --import
   - echo $GPG_OWNERTRUST | base64 --decode | $GPG_EXECUTABLE --import-ownertrust
 
+install:
+  mvn --settings .travis.settings.xml install -DskipTests=true -Dgpg.skip -Dmaven.javadoc.skip=true -B -V
+
 ## Deploy only tagged releases
 deploy:
   provider: script
-  script: "mvn clean deploy --settings .travis.settings.xml -DskipTests=true -P release -B"
+  script: "mvn clean deploy --settings .travis.settings.xml -DskipTests=true -Prelease -B"
   on:
     tags: true
     branch: releases
+
+cache:
+  directories:
+  - ~/.m2/repository
