@@ -1,7 +1,7 @@
 # DarkSky Java Client
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://github.com/skylarkbe/darksky-client/blob/master/LICENSE)
-![GitHub tag (latest by date)](https://img.shields.io/github/tag-date/skylarkbe/darksky-client.svg)
+[![GitHub tag (latest by date)](https://img.shields.io/github/tag-date/skylarkbe/darksky-client.svg)](https://github.com/skylarkbe/darksky-client/releases/latest)
 [![Build Status](https://travis-ci.com/skylarkbe/darksky-client.svg?branch=master)](https://travis-ci.com/skylarkbe/darksky-client)
 
 
