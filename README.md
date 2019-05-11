@@ -1,6 +1,9 @@
 # DarkSky Java Client
 
+> Weather forecasts using the DarkSky public API
+
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://github.com/skylarkbe/darksky-client/blob/master/LICENSE)
+[![Sonatype Nexus (Releases)](https://img.shields.io/nexus/r/https/oss.sonatype.org/be.skylark.weather/darksky-client.svg)](https://oss.sonatype.org/content/groups/public/be/skylark/weather/darksky-client/)
 [![GitHub tag (latest by date)](https://img.shields.io/github/tag-date/skylarkbe/darksky-client.svg)](https://github.com/skylarkbe/darksky-client/releases/latest)
 [![Build Status](https://travis-ci.com/skylarkbe/darksky-client.svg?branch=master)](https://travis-ci.com/skylarkbe/darksky-client)
 
@@ -15,7 +18,7 @@ Both the _Forecast_ and _TimeMachine_ requests are supported.
 
 ### Client
 
-The Forecast and TimeMachine calls rely on the DarkSkyClient, which may be created accordingly :
+The Forecast and TimeMachine calls rely on the `DarkSkyClient`, which may be created accordingly :
 
 ```
 DarkSkyClient darkSkyClient = new DarkSkyClient() ;
@@ -27,7 +30,7 @@ darkSkyClient.setTimeMachinePath( "/forecast/${apiKey}/${latitude},${longitude},
 
 ### Forecast
 
-Firstly, you need to create an instance of DsClient, and populate the obligatory properties. Then, build a DsForecastRequest :
+Firstly, you need to create an instance of `DarkSkyClient`, and populate the obligatory properties. Then, build a `DsForecastRequest` :
 
 ```
 final DsForecastRequest forecastRequest = DsForecastRequest.builder()
@@ -47,7 +50,7 @@ DsResponse forecast = darkSkyClient.getForecast( forecastRequest ) ;
 
 ### Time Machine
 
-Firstly, you need to create an instance of DsClient, and populate the obligatory properties. Then, build a DsTimeMachineRequest :
+Firstly, you need to create an instance of `DarkSkyClient`, and populate the obligatory properties. Then, build a `DsTimeMachineRequest` :
 
 ```
 final DsTimeMachineRequest timeMachineRequest = DsTimeMachineRequest.builder()
@@ -62,7 +65,7 @@ final DsTimeMachineRequest timeMachineRequest = DsTimeMachineRequest.builder()
 And finally, call the API :
 
 ```
-DsResponse forecast = darkSkyClient.getTimeMachine( forecastRequest ) ;
+DsResponse timeMachine = darkSkyClient.getTimeMachine( forecastRequest ) ;
 ```
 
 ## Attribution
