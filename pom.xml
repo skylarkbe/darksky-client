@@ -97,6 +97,15 @@
 
 	<build>
 		<plugins>
+			<!-- Disable default maven deploy plugin -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-deploy-plugin</artifactId>
+				<version>3.0.0-M1</version>
+				<configuration>
+					<skip>true</skip>
+				</configuration>
+			</plugin>
 			<!-- To run tests -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -121,6 +130,27 @@
 			</activation>
 			<build>
 				<plugins>
+					<!-- Uses Sonatype deploy plugin -->
+					<plugin>
+						<groupId>org.sonatype.plugins</groupId>
+						<artifactId>nexus-staging-maven-plugin</artifactId>
+						<version>1.6.8</version>
+						<extensions>true</extensions>
+						<executions>
+							<execution>
+								<id>default-deploy</id>
+								<phase>deploy</phase>
+								<goals>
+									<goal>deploy</goal>
+								</goals>
+							</execution>
+						</executions>
+						<configuration>
+							<serverid>ossrh</serverid>
+							<nexusurl>https://oss.sonatype.org/</nexusurl>
+							<autoreleaseafterclose>true</autoreleaseafterclose>
+						</configuration>
+					</plugin>
 					<!-- To attach sources -->
 					<plugin>
 						<groupId>org.apache.maven.plugins</groupId>
