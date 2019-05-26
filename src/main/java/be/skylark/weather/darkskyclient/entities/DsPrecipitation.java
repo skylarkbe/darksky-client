@@ -2,6 +2,7 @@ package be.skylark.weather.darkskyclient.entities;
 
 import lombok.Getter;
 
+import java.io.Serializable;
 import java.util.Arrays;
 import java.util.Optional;
 
@@ -16,7 +17,7 @@ import java.util.Optional;
  * (If precipIntensity is zero, then this property will not be defined. Additionally, due to the lack of data in
  * our sources, historical precipType information is usually estimated, rather than observed.)
  */
-public enum DsPrecipitation {
+public enum DsPrecipitation implements Serializable {
 
     RAIN("rain"), SNOW("snow"), SLEET("sleet"), UNKNOWN("unknown") ;
 

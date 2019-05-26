@@ -8,11 +8,12 @@ import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class DsDataPoint {
+public class DsDataPoint implements Serializable {
 
     /**
      * The apparent (or “feels like”) temperature.

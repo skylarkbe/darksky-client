@@ -3,12 +3,14 @@ package be.skylark.weather.darkskyclient.entities;
 import lombok.Builder;
 import lombok.Getter;
 
+import java.io.Serializable;
+
 /**
  * This class is mapping the request metadata in the returned object ; so that the implementing client may use them
  * accordingly
  */
 @Builder
-public class DsMeta {
+public class DsMeta implements Serializable {
 
     public static final String HEADER_CACHE_CONTROL = "cache-control" ;
     public static final String HEADER_RESPONSE_TIME = "x-response-time" ;

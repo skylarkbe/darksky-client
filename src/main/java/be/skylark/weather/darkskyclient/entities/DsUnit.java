@@ -2,10 +2,11 @@ package be.skylark.weather.darkskyclient.entities;
 
 import lombok.Getter;
 
+import java.io.Serializable;
 import java.util.Arrays;
 import java.util.Optional;
 
-public enum DsUnit {
+public enum DsUnit implements Serializable {
 
     /**
      * Automatically select units based on geographic location

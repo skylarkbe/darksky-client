@@ -8,12 +8,13 @@ import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.List;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class DsFlags {
+public class DsFlags implements Serializable {
 
     /**
      * The presence of this property indicates that the Dark Sky data source supports the given location, but a
