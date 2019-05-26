@@ -2,6 +2,7 @@ package be.skylark.weather.darkskyclient.entities;
 
 import lombok.Getter;
 
+import java.io.Serializable;
 import java.util.Arrays;
 import java.util.Optional;
 
@@ -10,7 +11,7 @@ import java.util.Optional;
  * See <a href="https://darksky.net/dev/docs">DarkSky API</a> for more information
  * @author Skylark.be
  */
-public enum DsLanguage {
+public enum DsLanguage implements Serializable {
 
     AR("ar"), // Arabic
     AZ("az"), // Azerbaijani

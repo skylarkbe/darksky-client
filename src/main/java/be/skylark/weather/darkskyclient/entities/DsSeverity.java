@@ -2,6 +2,7 @@ package be.skylark.weather.darkskyclient.entities;
 
 import lombok.Getter;
 
+import java.io.Serializable;
 import java.util.Arrays;
 import java.util.Optional;
 
@@ -14,7 +15,7 @@ import java.util.Optional;
  * </ul>
  * required
  */
-public enum DsSeverity {
+public enum DsSeverity implements Serializable {
 
     ADVISORY("advisory"), WATCH("watch"), WARNING("warning"), UNKNOWN("unknown" );
 

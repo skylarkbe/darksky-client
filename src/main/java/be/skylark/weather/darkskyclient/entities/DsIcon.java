@@ -2,6 +2,7 @@ package be.skylark.weather.darkskyclient.entities;
 
 import lombok.Getter;
 
+import java.io.Serializable;
 import java.util.Arrays;
 import java.util.Optional;
 
@@ -23,7 +24,7 @@ import java.util.Optional;
  * (Developers should ensure that a sensible default is defined, as additional values, such as hail, thunderstorm,
  * or tornado, may be defined in the future.)
  */
-public enum DsIcon {
+public enum DsIcon implements Serializable {
 
     CLEAR_DAY("clear-day"), CLEAR_NIGHT("clear-night"), RAIN("rain"), SNOW("snow"),
     SLEET("sleet"), WIND("wind"), FOG("fog"), CLOUDY("cloudy"),
